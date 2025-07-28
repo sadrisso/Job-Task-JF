@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white">
-      <nav className="flex items-center justify-between px-4 py-3 md:px-10 lg:px-40">
+      <nav className="flex items-center justify-between px-4 py-3 md:px-10 lg:px-64">
         {/* Mobile Menu Icon */}
         <div className="flex md:hidden">
           <button onClick={() => setIsOpen(true)} className="text-xl">
