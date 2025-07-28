@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Products from "@/components/Products";
 import TrustSection from "@/components/TrustSection";
+import WhyUsSection from "@/components/WhyUsSection";
 
 export default function Home() {
   const products = [
@@ -113,6 +114,10 @@ export default function Home() {
 
       <div className="py-5 px-2">
         <TrustSection />
+      </div>
+
+      <div>
+        <WhyUsSection />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Products = ({ products, title }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,9 +40,7 @@ const Products = ({ products, title }) => {
                       {product.title}
                     </h3>
                     <p className="text-gray-500 mb-4">{product.price}</p>
-                    <button className="bg-[#B0DD1D] px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-green-400 text-xs">
-                      {product.button}
-                    </button>
+                    <Button text={product?.button}/>
                   </div>
                 </div>
               ))}

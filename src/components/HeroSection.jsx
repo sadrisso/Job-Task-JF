@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Button from "./Button";
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -73,9 +74,7 @@ const HeroSection = () => {
                     <p className="text-gray-600 mb-4">{card.description}</p>
                     <div className="text-left p-4">
                       {card.button && (
-                        <button className="bg-[#B0DD1D] px-2 md:px-4 py-1 md:py-2 rounded-lg text-xs">
-                          {card.button}
-                        </button>
+                        <Button text={card?.button}/>
                       )}
                     </div>
                   </div>
