@@ -17,7 +17,7 @@ const Products = ({ products, title }) => {
 
   return (
     <div className="w-full py-12 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-1 md:px-8">
         <h2 className="text-2xl md:text-4xl text-gray-800 mb-8 px-1">
           {title}
         </h2>

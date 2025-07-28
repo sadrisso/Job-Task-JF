@@ -1,7 +1,7 @@
-
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Products from "@/components/Products";
+import TrustSection from "@/components/TrustSection";
 
 export default function Home() {
   const products = [
@@ -25,7 +25,8 @@ export default function Home() {
     },
     {
       title: "JF Colbed Wire-21D 0681",
-      image: "https://i.ibb.co/8DGmQT0z/aspee-paddy-thresher-15-05-2023-096-272454904-j6s6r3x8.png",
+      image:
+        "https://i.ibb.co/8DGmQT0z/aspee-paddy-thresher-15-05-2023-096-272454904-j6s6r3x8.png",
       price: "₱4,950.00",
       button: "Shop Now",
     },
@@ -94,10 +95,9 @@ export default function Home() {
     },
   ];
 
-
   return (
     <div className="bg-white text-black">
-      <div>
+      <div id="home">
         <Navbar />
       </div>
       <div>
@@ -107,8 +107,12 @@ export default function Home() {
         <Products title="Agricultural Products" products={products} />
       </div>
 
-      <div>
+      <div id="shop">
         <Products title="Landscape Products" products={landscapeProducts} />
+      </div>
+
+      <div className="py-5 px-2">
+        <TrustSection />
       </div>
     </div>
   );

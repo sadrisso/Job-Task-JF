@@ -28,7 +28,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="flex justify-center items-center">
-          <Image src="https://i.ibb.co/xKsytBjj/Group-395.png" alt="Logo" width={80} height={80} className="h-12 w-auto" />
+          <Image src="https://i.ibb.co/xKsytBjj/Group-395.png" alt="Logo" width={80} height={80} className="h-14 w-auto" />
         </div>
 
         {/* Right Side */}
