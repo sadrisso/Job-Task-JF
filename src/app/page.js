@@ -1,4 +1,5 @@
 import BannerSection from "@/components/BannerSection";
+import CustomerLoveSection from "@/components/CustomerLoveSection";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Products from "@/components/Products";
@@ -95,6 +96,18 @@ export default function Home() {
       price: "₱1,260.00 - ₱10,750.00",
       button: "Shop Now",
     },
+    {
+      title: "JF Colbed Wire-21D 0681",
+      image: "https://i.ibb.co/QF8YqYSf/lands-4.jpg",
+      price: "₱4,950.00",
+      button: "Shop Now",
+    },
+    {
+      title: "FGC Beesthe Tonding 80s",
+      image: "https://i.ibb.co/vCrVNyFL/lands-1.jpg",
+      price: "₱4,950.00 - ₱18,850.00",
+      button: "Shop Now",
+    },
   ];
 
   return (
@@ -123,6 +136,10 @@ export default function Home() {
 
       <div>
         <BannerSection />
+      </div>
+
+      <div className="py-4">
+        <CustomerLoveSection />
       </div>
     </div>
   );
