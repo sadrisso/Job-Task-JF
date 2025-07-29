@@ -1,3 +1,4 @@
+import BannerSection from "@/components/BannerSection";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Products from "@/components/Products";
@@ -118,6 +119,10 @@ export default function Home() {
 
       <div>
         <WhyUsSection />
+      </div>
+
+      <div>
+        <BannerSection />
       </div>
     </div>
   );
