@@ -1,6 +1,7 @@
 import BannerSection from "@/components/BannerSection";
 import ContactSection from "@/components/ContactSection";
 import CustomerLoveSection from "@/components/CustomerLoveSection";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Products from "@/components/Products";
@@ -119,11 +120,11 @@ export default function Home() {
       <div>
         <HeroSection />
       </div>
-      <div>
+      <div id="shop">
         <Products title="Agricultural Products" products={products} />
       </div>
 
-      <div id="shop">
+      <div>
         <Products title="Landscape Products" products={landscapeProducts} />
       </div>
 
@@ -131,7 +132,7 @@ export default function Home() {
         <TrustSection />
       </div>
 
-      <div>
+      <div id="blogs">
         <WhyUsSection />
       </div>
 
@@ -143,8 +144,12 @@ export default function Home() {
         <CustomerLoveSection />
       </div>
 
-      <div>
+      <div id="contact">
         <ContactSection />
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   );

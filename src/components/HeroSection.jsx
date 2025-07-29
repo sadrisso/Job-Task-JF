@@ -54,7 +54,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-full bg-gray-100 md:py-4 py-2 md:px-4">
+    <div className="w-full md:py-4 py-2 md:px-4">
       <div className="mx-auto">
         <div className="relative overflow-hidden">
           <div
@@ -62,8 +62,8 @@ const HeroSection = () => {
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
             {cards.map((card, index) => (
-              <div key={index} className="w-2/3 h-[400px] md:h-[500px] flex-shrink-0 px-2 bg-[#F2F4F6]">
-                <div className="bg-white rounded-lg shadow-lg p-2 md:p-6 flex border h-[400] md:h-[500px] flex-col md:flex-row justify-center items-center border-gray-200">
+              <div key={index} className="w-2/3 h-[400px] md:h-[500px] flex-shrink-0 px-2">
+                <div className="bg-[#F2F4F6] rounded-lg shadow-lg p-2 md:p-6 flex h-[400] md:h-[500px] flex-col md:flex-row justify-center items-center">
                   <img
                     src={card.image}
                     alt={card.title}
