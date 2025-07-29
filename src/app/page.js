@@ -1,4 +1,5 @@
 import BannerSection from "@/components/BannerSection";
+import ContactSection from "@/components/ContactSection";
 import CustomerLoveSection from "@/components/CustomerLoveSection";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
@@ -140,6 +141,10 @@ export default function Home() {
 
       <div className="py-4">
         <CustomerLoveSection />
+      </div>
+
+      <div>
+        <ContactSection />
       </div>
     </div>
   );
